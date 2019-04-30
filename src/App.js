@@ -42,6 +42,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <p className="input">{this.state.input}</p>
+        <p className="result">{this.state.result}</p>
         <div>
           <input type="button" value={7} name="7" onClick={this.getNumbers} />
           <input type="button" value={8} name="8" onClick={this.getNumbers} />
@@ -93,9 +95,6 @@ class App extends React.Component {
             onClick={this.getNumbers}
           />
         </div>
-
-        <p className="input">{this.state.input}</p>
-        <p className="result">{this.state.result}</p>
       </div>
     );
   }
