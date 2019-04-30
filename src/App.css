@@ -17,7 +17,7 @@ input {
 }
 
 .input {
-  margin: 10px auto;
+  margin: 0 auto;
   width: 400px;
   font-size: 20px;
   padding: 10px;
@@ -25,7 +25,7 @@ input {
 }
 
 .result {
-  margin: 10px auto;
+  margin: 0 auto;
   width: 400px;
   font-size: 20px;
   text-align: right;
