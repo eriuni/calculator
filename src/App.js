@@ -35,7 +35,7 @@ class App extends React.Component {
 
   del = e => {
     this.setState({
-      input: this.state.input.slice(0, -1)
+      input: String(this.state.input).slice(0, -1)
     });
   };
 
@@ -78,7 +78,7 @@ class App extends React.Component {
 
         <div>
           <input type="button" value={"C"} name="clear" onClick={this.clear} />
-          <input type="button" value={"Del"} name="del" onClick={this.del} />
+          <input type="button" value={"DEL"} name="del" onClick={this.del} />
           <input
             type="button"
             value={"="}
@@ -94,8 +94,8 @@ class App extends React.Component {
           />
         </div>
 
-        <p>{this.state.input}</p>
-        <p>{this.state.result}</p>
+        <p className="input">{this.state.input}</p>
+        <p className="result">{this.state.result}</p>
       </div>
     );
   }
